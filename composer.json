@@ -1,0 +1,32 @@
+{
+    "name": "rabsana/normalizer",
+    "description": "Normalize values based on predefined normalizing table",
+    "type": "library",
+    "license": "proprietary",
+    "authors": [
+        {
+            "name": "Rabsana Co",
+            "email": "info.rabsana@gmail.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {
+        "mockery/mockery": "^1.3"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "~6.1",
+        "orchestra/testbench": "~3.0",
+        "orchestra/database": "~3.0"
+    },
+    "autoload": {
+        "classmap": ["src/database"],
+        "psr-4": {
+            "Rabsana\\Normalizer\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Rabsana\\Normalizer\\Tests\\": "tests/"
+        }
+    }
+}
